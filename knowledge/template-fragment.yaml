@@ -1,11 +1,13 @@
 ##
-## ШАБЛОН РАСЧЁТА — ФРАГМЕНТ.
+## THE CALCULATION TEMPLATE — A FRAGMENT.
 ##
-## Выписано дословно из EKC3: Knowledge/Шаблоны/gearbox.yaml. Весь шаблон —
-## 757 строк: 223 шага в 18 стадиях и 6 петель. Здесь шапка, первая стадия и
-## одна петля целиком — чтобы видно было форму, а не пересказ.
+## Copied verbatim from EKC3: Knowledge/Шаблоны/gearbox.yaml. The whole
+## template is 757 lines: 223 steps in 18 stages and 6 iteration loops. Here
+## are its header, the first stage and one loop in full — the form itself
+## rather than a description of it. It is in Russian because the base is; the
+## English reading is in README.md next to this file.
 ##
-## Дальше идёт шапка файла, как она написана в базе.
+## What follows is the header of the file as it is written in the base.
 ##
 
 ##

@@ -1,25 +1,34 @@
 ##
-## ДВЕ ЗАПИСИ, ДАЮЩИЕ ОДНУ ВЕЛИЧИНУ.
+## TWO RECORDS THAT PRODUCE ONE QUANTITY.
 ##
-## Выписаны дословно из базы знаний EKC2, файл Knowledge/Formulas/gear.yaml:
-## `gear.working-width` — строки 315–346, `gear.face-width` — строки 514–562.
-## Ничего не сокращено и не переписано, включая примечания.
+## Copied verbatim from the EKC2 knowledge base, file
+## Knowledge/Formulas/gear.yaml: `gear.working-width` is lines 315–346,
+## `gear.face-width` is lines 514–552. Nothing has been shortened or reworded,
+## comments included. They are in Russian because the base is; the point they
+## make can be checked without reading a word of it.
 ##
-## Обе нормативны (`status: normative`), обе ссылаются на один источник
-## (Дунаев §10.4) и обе объявляют своим выходом `b_w_mm`. Проверить это можно
-## глазами, не запуская ничего: смотреть на строки `output:` в конце каждой.
+## Both are `status: normative`, both cite the same source (Dunaev §10.4), and
+## both declare the same `output: { name: b_w_mm }`. Look at the `output:` line
+## of each — that is the whole case.
 ##
-## Что каждая означает:
-##   gear.face-width    — ПРОЕКТНАЯ ширина венца: сколько её назначить,
-##                        b = ψ_ba · a_w;
-##   gear.working-width — РАБОЧАЯ ширина: сколько её её работает в контакте,
-##                        меньшая из двух венцов пары.
+## What they mean, for a reader who does not read the language:
 ##
-## Это разные величины инженерно — и одна величина для системы, потому что
-## опознаётся она именем. Отсюда и весь случай.
+##   gear.face-width     the DESIGN face width: how wide to make the rim,
+##                       b = ψ_ba · a_w, a relative-width factor times the
+##                       centre distance;
+##   gear.working-width  the WORKING face width: how much of the rim is
+##                       actually in contact — the smaller of the two rims of
+##                       a pair, because the pinion is made 3…5 mm wider than
+##                       the wheel so that axial misalignment cannot reduce
+##                       the contact.
+##
+## Two different engineering quantities. One quantity for the system, because
+## a quantity is identified by its NAME. That is the whole mechanism, and the
+## rest of the case follows from it.
 ##
 
-# ── запись 1 ──────────────────────────────────────────────────────────
+# ── record 1 ──────────────────────────────────────────────────────────
+
   - id: gear.working-width
     status: normative
     source: >
@@ -52,8 +61,8 @@
         verified_against: self-computed
         tolerance: 0.000000001
 
+# ── record 2 ──────────────────────────────────────────────────────────
 
-# ── запись 2 ──────────────────────────────────────────────────────────
   - id: gear.face-width
     status: normative
     source: >
@@ -93,13 +102,3 @@
         expect:    { value: 35.041, unit: mm }
         verified_against: self-computed
         tolerance: 0.000001
-
-  ## ── Напряжения в зубьях и допускаемые напряжения ─────────────────────────
-  ##
-  ## Жанр — «Формулы», хотя выражения полны коэффициентов: сама структура
-  ## выведена (контактная — из задачи Герца о сжатии цилиндров, изгибная — из
-  ## балки равного сопротивления), а всё подобранное приходит входами из
-  ## жанра «Эмпирика». Единица результата следует из входов: ньютон на
-  ## квадратный миллиметр есть мегапаскаль, и договариваться тут не о чем.
-  ##
-

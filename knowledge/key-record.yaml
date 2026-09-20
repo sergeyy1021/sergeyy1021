@@ -1,30 +1,40 @@
 ##
-## ЗАПИСЬ ЗНАНИЯ — ОДНА, ЦЕЛИКОМ.
+## ONE KNOWLEDGE RECORD, IN FULL.
 ##
-## Выписана дословно из работающей базы EKC3: Knowledge/Расчёты/11-шпонки/
-## формулы.yaml, строки 22–83. Ничего не сокращено, включая комментарии.
+## Copied verbatim from the working EKC3 base: Knowledge/Расчёты/11-шпонки/
+## формулы.yaml, lines 22–83. Nothing shortened, comments included. It is in
+## Russian because the base is; what it does is readable from the structure.
 ##
-## Читать её стоит по четырём местам:
+## The record picks the cross-section of a parallel key from the diameter of
+## the shaft it sits on (GOST 23360-78, the counterpart of DIN 6885). Four
+## places are worth looking at:
 ##
-##   source      откуда взято и НАСКОЛЬКО ЭТО ПРОВЕРЕНО. Знак ◐ означает
-##               «перенесено, документ не сверялся». Проверенное и
-##               непроверенное различаются пометкой, а не памятью автора.
+##   source      where it comes from and HOW WELL THAT IS VERIFIED. The sign ◐
+##               means "transferred, the document itself was not checked
+##               against". Verified and unverified differ by a mark, not by
+##               the author's memory.
 ##
-##   note        как читать границы. Диаметр ровно на границе принадлежит
-##               нижней строке, и это сказано словами — а не оставлено
-##               порядку строк в таблице.
+##   note        how to read the interval boundaries. A diameter exactly on a
+##               boundary belongs to the LOWER row — 50 mm is still 14×9, not
+##               16×10 — and that is stated in words, not left to the order of
+##               rows in the table.
 ##
-##   range       сама выборка: таблица, аргумент, границы «свыше — до
-##               включительно». Запись не вычисляет, а читает стандарт.
+##   range       the lookup itself: table, argument, bounds "over A to B
+##               inclusive". The record does not compute, it reads a standard:
+##               there is no key section between rows, so nothing is
+##               interpolated.
 ##
-##   self_checks контрольные примеры, и у каждого сказано, ЧЕМ он проверен:
-##               `source` — числом из документа, `invariant` — тем, что
-##               обязано выполняться само по себе. Три из пяти примеров
-##               стоят на границах нарочно: 50 — конец интервала, 44 — не
-##               начало следующего, 38,5 — бывшая щель между строками.
+##   self_checks control examples, each saying WHAT it is verified against:
+##               `source` — a number from the document, with the row quoted;
+##               `invariant` — something that must hold by itself (the same
+##               diameter in centimetres gives the same answer). Three of the
+##               five sit on boundaries deliberately: 50 is the end of an
+##               interval, 44 is not yet the start of the next one, 38.5 is a
+##               gap that existed while intervals were written as whole
+##               numbers.
 ##
-## Чего в записи НЕТ: детали. Запись не знает, к чему её применят, и сама
-## этого не решает — на деталь её ставит человек.
+## What the record does NOT contain: a part. It does not know what it will be
+## applied to, and does not decide that — a human puts it on a part.
 ##
 
   - id: key.width-by-shaft

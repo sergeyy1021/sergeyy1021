@@ -11,13 +11,15 @@ code is written by AI agents under my direction; the architecture, the domain
 knowledge, the decisions and the acceptance are mine. I keep a written decision
 log, so a rejected option stays on record with the reason it was rejected.
 
-**Domains.** Machine design — gearboxes, shafts, bearings, keys, GOST standards.
-Furniture manufacturing — cabinet standards, joinery, panel cutting, DXF.
-Applied ML — NLLB fine-tuning for ru→nb, evaluation pipelines.
+**Domains.** Machine design — gearboxes, shafts, bearings, keys, and the
+national and ISO standards a calculation has to obey. Furniture manufacturing —
+cabinet standards, joinery, hardware, and the whole chain from a panel to the
+machine: DXF, MPR, NC / G-code for CNC. Applied ML — NLLB fine-tuning for ru→nb,
+evaluation pipelines.
 
 ---
 
-### [Three cases](СЛУЧАИ.md) — how I work, shown on three failures
+### [Three cases](CASES.md) — how I work, shown on three failures
 
 1. **A system gave a plausible wrong answer and could not say it had chosen.**
    Two legitimate engineering formulas produced one quantity; the tie was broken
@@ -54,7 +56,7 @@ a formula, a GOST table, a check, each carrying its source, its maturity and its
 limits of applicability, so an engineer can change the knowledge without
 programming.
 
-→ [**What that actually looks like**](знание/ЧИТАТЬ.md): two exhibits copied
+→ [**What that actually looks like**](knowledge/README.md): two exhibits copied
 verbatim from the live knowledge base — one record in full, and a fragment of the
 calculation template (223 steps in 18 stages, 6 declared iteration loops).
 
