@@ -35,6 +35,11 @@ one won.
 There was no defect in the code. The algorithm did exactly what it was written
 to do.
 
+*(60 and 64 are the numbers of that day. The base has since been reorganised, so
+the stand further down shows the same mechanism on today's records, where it
+yields 40 and 55.19. The mechanism is the point; the numbers are what it
+produces at the moment you run it.)*
+
 **Why this is the worst kind of failure.** 60 mm is a plausible number. Nothing
 crashed, no test went red, the calculation ran to the end and produced a result
 that looked ordinary. And the displaced formula **did not even appear among the
@@ -45,8 +50,11 @@ For a system that promises traceability, this is a failure of the promise
 itself: the number formally had a provenance, while the decision that determined
 it was recorded nowhere.
 
-Face width is not a detail — contact stress and the life of the gear depend on
-it. Four millimetres here is not cosmetic.
+Face width is not a detail. Contact stress goes as 1/√b, so 64 → 60 mm raises it
+by about 3 %; with the sixth-power exponent that the durability factor uses, that
+is roughly a fifth of the contact life of the gear. The arithmetic assumes
+everything else equal, and I have not verified it against that particular
+gearbox — but four millimetres here is not cosmetics.
 
 **The diagnosis.** The routine move is to fix the priority: prefer the more
 precise record, or the one whose limits of applicability are declared. Half an
@@ -242,14 +250,13 @@ force.
 
 ## 3. The guard that issued permission
 
-**What the guard is for.** Some of the checks in the project stood on invented
-data — fixtures. That is convenient and almost always a lie: a fixture verifies
-the step just before the interesting one. So a list of debtor files was created,
-along with a mechanism that makes sure the debt is not quietly dissolved.
-
-The rule: a file that stops being a debtor must name a **live witness** — a check
-that runs against a real product. The guard verifies that the witness exists and
-that it really reads a product.
+**What the guard is for.** Some checks in the project stood on invented data —
+fixtures. That is convenient and almost always a lie: a fixture verifies the step
+just before the interesting one. So the files still standing on fixtures were put
+on a list of debtors, and a guard was written to make sure the debt could not be
+quietly dissolved: a file that leaves the list must name a **live witness**, a
+check that runs against a real product, and the guard verifies that the witness
+exists.
 
 ```
 run.test.ts           loop algebra          (live — loop-turns.test.ts)
@@ -269,14 +276,12 @@ that was supposed to make the guard fail did not make it fail.
 The pattern was fixed; the corruption now fails both checks.
 
 **What the same guard did next.** When one of the checks was moved onto a real
-product, the guard **failed** with the words "moved onto a live product — remove
-it from the debt list": it caught the author with the second half of the work
-undone. Fixture debt: 7 → 4 → 0.
-
-And the move it demanded found a defect the fixtures could not see: the checks
-had been standing one step short of the point — "the block returned" instead of
-"coordinates came out of the block and reactions out of them"; "the power came
-back as 25 kW" instead of the identity holding on a real chain of six bodies.
+product, the guard **failed** — "moved onto a live product, remove it from the
+debt list" — and caught the author with the second half of the work undone.
+Fixture debt: 7 → 4 → 0. The move it demanded also found a defect the fixtures
+could not see: the checks had been standing one step short of the point — "the
+block returned" instead of "coordinates came out of the block and reactions out
+of them".
 
 **What became rules.**
 
