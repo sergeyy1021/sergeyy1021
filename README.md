@@ -58,7 +58,7 @@ knowledge without programming.
 
 → [**What that actually looks like**](knowledge/README.md): two exhibits copied
 verbatim from the live knowledge base — one record in full, and a fragment of the
-calculation template (223 steps in 18 stages, 6 declared iteration loops).
+calculation template (223 steps in 19 stages, 6 declared iteration loops).
 
 There have been three implementations. The first runs as a demo stand behind a
 password — ask and I will open it. The current one takes the knowledge entirely

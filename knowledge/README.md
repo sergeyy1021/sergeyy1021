@@ -12,7 +12,7 @@ look at in them.
   counterpart of DIN 6885).
 - [`template-fragment.yaml`](template-fragment.yaml) — the header of the
   calculation template, its first stage and one loop. The whole template is 223
-  steps in 18 stages and 6 loops.
+  steps in 19 stages and 6 loops.
 
 Both files are in Russian, because the base is. The structure is what matters
 here, and it reads without the language.
