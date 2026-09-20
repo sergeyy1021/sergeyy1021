@@ -14,8 +14,8 @@ cannot be reproduced today, that is said plainly.
 
 A word about the system, so the cases can be read. EKC computes mechanical
 assemblies — a gearbox, a shaft, its bearings — not from a program but from
-**knowledge records**: a formula, a GOST table, a check, each stored as data
-with its source and its limits of applicability. The promise of the system is a
+**knowledge records**: a formula, a table from a standard, a check — each stored
+as data with its source and its limits of applicability. The promise of the system is a
 simple one: no number without a provenance. All three cases are about that
 promise being tested.
 

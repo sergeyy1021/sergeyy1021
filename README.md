@@ -52,9 +52,9 @@ evaluation pipelines.
 ### Projects
 
 **EKC** — a system that computes mechanical assemblies from knowledge records:
-a formula, a GOST table, a check, each carrying its source, its maturity and its
-limits of applicability, so an engineer can change the knowledge without
-programming.
+a formula, a table from a standard, a check — each carrying its source, its
+maturity and its limits of applicability, so an engineer can change the
+knowledge without programming.
 
 → [**What that actually looks like**](knowledge/README.md): two exhibits copied
 verbatim from the live knowledge base — one record in full, and a fragment of the
