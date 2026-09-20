@@ -63,10 +63,16 @@ password — ask and I will open it. The current one takes the knowledge entirel
 out of the engine and is research in progress; its repository is not published,
 which is why the exhibits above are files rather than a link.
 
-**Workbench** — a protocol and a tool that keep an AI agent inside the structure
-a human approved: structure is declared before code, approved by the names of the
-functions that will exist, and enforced by a hook rather than by advice.
-*(repository coming)*
+**[Workbench](https://github.com/sergeyy1021/workbench)** — a protocol and a tool
+that keep an AI agent inside the structure a human approved: structure is
+declared before code, approved by the names of the functions that will exist, and
+enforced by a hook rather than by advice. The check then compares the declaration
+with the code and reports what nobody declared.
+
+Worth reading even if you never install it: [the protocol
+itself](https://github.com/sergeyy1021/workbench/blob/main/PROTOCOL.md) — seven
+rules, each with the reason it exists, including the one that requires the agent
+to report the places it could not honestly name.
 
 ---
 
