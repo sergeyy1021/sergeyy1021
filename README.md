@@ -50,9 +50,18 @@ Applied ML — NLLB fine-tuning for ru→nb, evaluation pipelines.
 ### Projects
 
 **EKC** — a system that computes mechanical assemblies from knowledge records:
-a formula, a GOST table, a check, each carrying its source and its limits of
-applicability, so an engineer can change the knowledge without programming.
-Demo stand behind a password — ask and I will open it.
+a formula, a GOST table, a check, each carrying its source, its maturity and its
+limits of applicability, so an engineer can change the knowledge without
+programming.
+
+→ [**What that actually looks like**](знание/ЧИТАТЬ.md): two exhibits copied
+verbatim from the live knowledge base — one record in full, and a fragment of the
+calculation template (223 steps in 18 stages, 6 declared iteration loops).
+
+There have been three implementations. The first runs as a demo stand behind a
+password — ask and I will open it. The current one takes the knowledge entirely
+out of the engine and is research in progress; its repository is not published,
+which is why the exhibits above are files rather than a link.
 
 **Workbench** — a protocol and a tool that keep an AI agent inside the structure
 a human approved: structure is declared before code, approved by the names of the
