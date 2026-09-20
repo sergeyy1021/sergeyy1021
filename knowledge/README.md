@@ -19,6 +19,30 @@ here, and it reads without the language.
 
 ---
 
+## What it looks like in the window
+
+![The calculation template: stages, steps, loops and the state of every input](template.png)
+
+The header line is the whole principle in one row of counters: **393 inputs of
+the template — 233 confirmed, 86 crossing to another part, 0 suggested, 0 red,
+73 entered by hand, 1 from the engine**, and *"a suggestion by the system becomes
+a link only after it is confirmed."*
+
+The system finds the candidates; a human confirms them one by one. The 319
+confirmations behind those first two numbers were made by hand, step by step,
+through this page. Where the system found several candidates and no rule to
+choose between them, it does not choose — that is the red counter, and it is at
+zero because every such case was resolved by a person, not by a default.
+
+Under the stages sit the **loops**, each with the condition that sends the
+calculation back, what it changes, and what counts as converged — for instance
+*"to the stage «Design calculation of the pair», when the overload is above +5 %
+or the underload deeper than −15 %; change the face width within the ψ_ba series
+first, then the centre distance by one step of the series: the width is cheaper,
+it does not move the housing."*
+
+---
+
 ## Exhibit 1: a record
 
 Sixty lines, and four things in them that ordinary calculation code does not
