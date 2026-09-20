@@ -1,4 +1,4 @@
-## Sergey
+## Serhii Klochko
 
 *[Русская версия](README.ru.md)*
 

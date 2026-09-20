@@ -1,4 +1,4 @@
-## Сергей
+## Сергей Клочко
 
 *[English version](README.md)*
 
